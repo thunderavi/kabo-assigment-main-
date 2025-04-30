@@ -7,7 +7,9 @@ const FormSection = () => {
         className="max-w-sm w-full bg-white rounded-xl shadow-lg p-6 sm:p-8 text-[#2c4f58] h-[550px]"
         autoComplete="off"
       >
-        <h2 className="text-xl font-normal mb-4">Create an Account</h2>
+        <h2 className="text-xl font-normal mb-4 text-customTeal">
+          Create an Account
+        </h2>
         <hr className="border-t border-gray-300 mb-6" />
 
         {/* Email Address */}
@@ -140,7 +142,7 @@ const FormSection = () => {
         {/* Submit Button */}
         <button
           type="submit"
-          className="mt-5 w-full bg-[#2c4f58] text-white font-semibold rounded-md py-3 text-base hover:bg-[#24434c] transition-colors"
+          className="mt-5 w-full bg-[#225865] text-white font-semibold rounded-md text-base hover:bg-[#24434c] transition-colors h-[45px] flex items-center justify-center"
         >
           Create an account
         </button>
