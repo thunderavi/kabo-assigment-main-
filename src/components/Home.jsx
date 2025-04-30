@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <main className="main-container">
       <section className="left-section">
-        <h1 className="main-heading">
+        <h1 className="main-heading ">
           Partner with real estate agents in
           <br />
           your city{' '}

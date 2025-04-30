@@ -4,7 +4,7 @@ const FormSection = () => {
   return (
     <section className="flex items-center justify-center p-4 bg-white min-h-screen font-[Inter] ml-[100px] mr-[12%] ">
       <form
-        className="max-w-sm w-full bg-white rounded-xl shadow-lg p-6 sm:p-8 text-[#2c4f58] h-[550px]"
+        className="max-w-100 w-full bg-white rounded-xl shadow-lg p-6 sm:p-8 text-[#2c4f58] h-[600px]"
         autoComplete="off"
       >
         <h2 className="text-xl font-normal mb-4 text-customTeal">
@@ -16,7 +16,7 @@ const FormSection = () => {
         <div className="border border-gray-300 rounded-md px-3 py-2 mb-6 relative">
           <label
             htmlFor="email"
-            className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-400 select-none"
+            className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-200 select-none"
           >
             Email Address
           </label>
@@ -34,7 +34,7 @@ const FormSection = () => {
         <div className="border border-gray-300 rounded-md px-3 py-2 mb-6 relative flex items-center gap-2">
           <label
             htmlFor="phone"
-            className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-400 select-none"
+            className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-200 select-none"
           >
             Phone Number
           </label>
@@ -82,7 +82,7 @@ const FormSection = () => {
           <div className="flex-1 border border-gray-300 rounded-md px-3 py-2 relative">
             <label
               htmlFor="firstName"
-              className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-400 select-none"
+              className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-200 select-none"
             >
               First Name
             </label>
@@ -98,7 +98,7 @@ const FormSection = () => {
           <div className="flex-1 border border-gray-300 rounded-md px-3 py-2 relative">
             <label
               htmlFor="lastName"
-              className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-400 select-none"
+              className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-200 select-none"
             >
               Last Name
             </label>
@@ -117,7 +117,7 @@ const FormSection = () => {
         <div className="border border-gray-300 rounded-md px-3 py-2 relative mb-6">
           <label
             htmlFor="password"
-            className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-400 select-none"
+            className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-200 select-none"
           >
             Password
           </label>
@@ -139,6 +139,14 @@ const FormSection = () => {
           </button>
         </div>
 
+        <p className="text-sm text-gray-500 text-center mb-4">
+  By clicking on <span className="font-semibold text-[#2c4f58]">Create an account</span>, you agree to our{" "}
+  <a href="/terms" className="underline text-[#2c4f58] font-medium">
+    T & C
+  </a>.
+</p>
+
+
         {/* Submit Button */}
         <button
           type="submit"
@@ -151,8 +159,8 @@ const FormSection = () => {
         <hr className="border-t border-gray-300 mt-6 mb-4" />
 
         {/* Already have an account? Login */}
-        <div className="text-center">
-          <span className="text-sm text-gray-600">
+        <div className="text-center mt-8">
+          <span className="text-sm text-gray-600 ">
             Already have an account?{" "}
             <a href="/login" className="text-[#2c4f58] font-semibold">
               Login
