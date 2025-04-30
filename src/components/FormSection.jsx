@@ -1,8 +1,11 @@
 import React from "react";
+import InputField from "./InputField";
+import PhoneInput from "./PhoneInput";
+import PasswordField from "./PasswordField";
 
 const FormSection = () => {
   return (
-    <section className="flex items-center justify-center p-4 bg-white min-h-screen font-[Inter] ml-[100px] mr-[12%] ">
+    <section className="flex items-center justify-center p-4 bg-white min-h-screen font-[Inter] ml-[100px] mr-[12%]">
       <form
         className="max-w-100 w-full bg-white rounded-xl shadow-lg p-6 sm:p-8 text-[#2c4f58] h-[600px]"
         autoComplete="off"
@@ -12,142 +15,37 @@ const FormSection = () => {
         </h2>
         <hr className="border-t border-gray-300 mb-6" />
 
-        {/* Email Address */}
-        <div className="border border-gray-300 rounded-md px-3 py-2 mb-6 relative">
-          <label
-            htmlFor="email"
-            className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-200 select-none"
-          >
-            Email Address
-          </label>
-          <input
-            id="email"
-            type="email"
-            defaultValue="mohammed.ishan@flyingrealty.com"
-            className="w-full border-0 p-0 m-0 text-base text-[#1a1a1a] placeholder-gray-300 focus:outline-none"
-            placeholder="Email Address"
-            required
-          />
-        </div>
+        <InputField
+          id="email"
+          label="Email Address"
+          type="email"
+          defaultValue="mohammed.ishan@flyingrealty.com"
+        />
 
-        {/* Phone Number */}
-        <div className="border border-gray-300 rounded-md px-3 py-2 mb-6 relative flex items-center gap-2">
-          <label
-            htmlFor="phone"
-            className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-200 select-none"
-          >
-            Phone Number
-          </label>
-          <button
-            type="button"
-            className="flex items-center gap-1 text-sm text-[#2c4f58] font-semibold"
-            aria-label="Country code selector"
-          >
-            <img
-              src="https://flagcdn.com/w20/in.png"
-              alt="Indian flag"
-              width="20"
-              height="15"
-              className="inline-block"
-            />
-            <span>+91</span>
-            <svg
-              className="w-3 h-3 text-[#2c4f58]"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </button>
-          <input
-            id="phone"
-            type="tel"
-            defaultValue="9876543210"
-            className="flex-grow border-0 p-0 m-0 text-base text-[#1a1a1a] placeholder-gray-300 focus:outline-none"
-            placeholder="Phone Number"
-            required
-          />
-        </div>
+        <PhoneInput />
 
-        {/* First and Last Name */}
         <div className="flex gap-6 mb-6">
-          <div className="flex-1 border border-gray-300 rounded-md px-3 py-2 relative">
-            <label
-              htmlFor="firstName"
-              className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-200 select-none"
-            >
-              First Name
-            </label>
-            <input
-              id="firstName"
-              type="text"
-              defaultValue="Mohammed"
-              className="w-full border-0 p-0 m-0 text-base text-[#1a1a1a] placeholder-gray-300 focus:outline-none"
-              placeholder="First Name"
-              required
-            />
-          </div>
-          <div className="flex-1 border border-gray-300 rounded-md px-3 py-2 relative">
-            <label
-              htmlFor="lastName"
-              className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-200 select-none"
-            >
-              Last Name
-            </label>
-            <input
-              id="lastName"
-              type="text"
-              defaultValue="Ishan"
-              className="w-full border-0 p-0 m-0 text-base text-[#1a1a1a] placeholder-gray-300 focus:outline-none"
-              placeholder="Last Name"
-              required
-            />
-          </div>
+          <InputField
+            id="firstName"
+            label="First Name"
+            type="text"
+            defaultValue="Mohammed"
+          />
+          <InputField
+            id="lastName"
+            label="Last Name"
+            type="text"
+            defaultValue="Ishan"
+          />
         </div>
 
-        {/* Password */}
-        <div className="border border-gray-300 rounded-md px-3 py-2 relative mb-6">
-          <label
-            htmlFor="password"
-            className="absolute -top-2 left-3 bg-white px-1 text-xs text-gray-200 select-none"
-          >
-            Password
-          </label>
-          <input
-            id="password"
-            type="password"
-            defaultValue="***************"
-            className="w-full border-0 p-0 pr-10 m-0 text-base text-[#1a1a1a] placeholder-gray-300 focus:outline-none"
-            placeholder="Password"
-            required
-          />
-          <button
-            type="button"
-            className="absolute inset-y-0 right-3 flex items-center text-gray-600"
-            aria-label="Toggle password visibility"
-            tabIndex="-1"
-          >
-            <i className="far fa-eye"></i>
-          </button>
-        </div>
+        <PasswordField defaultValue="***************" />
 
         <p className="text-sm text-gray-500 text-center mb-4">
-  By clicking on <span className="font-semibold text-[#2c4f58]">Create an account</span>, you agree to our{" "}
-  <a href="/terms" className="underline text-[#2c4f58] font-medium">
-    T & C
-  </a>.
-</p>
+          By clicking on <span className="font-semibold text-[#2c4f58]">Create an account</span>, you agree to our{" "}
+          <a href="/terms" className="underline text-[#2c4f58] font-medium">T & C</a>.
+        </p>
 
-
-        {/* Submit Button */}
         <button
           type="submit"
           className="mt-5 w-full bg-[#225865] text-white font-semibold rounded-md text-base hover:bg-[#24434c] transition-colors h-[45px] flex items-center justify-center"
@@ -155,16 +53,12 @@ const FormSection = () => {
           Create an account
         </button>
 
-        {/* Line Separator */}
         <hr className="border-t border-gray-300 mt-6 mb-4" />
 
-        {/* Already have an account? Login */}
         <div className="text-center mt-8">
-          <span className="text-sm text-gray-600 ">
+          <span className="text-sm text-gray-600">
             Already have an account?{" "}
-            <a href="/login" className="text-[#2c4f58] font-semibold">
-              Login
-            </a>
+            <a href="/login" className="text-[#2c4f58] font-semibold">Login</a>
           </span>
         </div>
       </form>
