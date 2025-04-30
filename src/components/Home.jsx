@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import '../style/Home.css';
 import FormSection from './FormSection';
 import illustration from '../assets/image1.png'; // Vite: use import for images
 
