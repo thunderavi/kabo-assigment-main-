@@ -6,34 +6,28 @@ import OtpForm from "./OtpForm";
 import LoginForm from "./LoginForm"; // Import the LoginForm
 
 const FormSection = () => {
-  // State to toggle between Account Creation, OTP Form, and Login Form
   const [isOtpForm, setIsOtpForm] = useState(false);
   const [isLoginForm, setIsLoginForm] = useState(false);
 
-  // Function to handle the transition to OTP form
   const handleCreateAccountClick = (e) => {
     e.preventDefault();
     setIsOtpForm(true);
   };
 
-  // Function to toggle between Login and Create Account form
   const handleLoginClick = (e) => {
     e.preventDefault();
     setIsLoginForm(true);
   };
 
-  // Function to toggle between Create Account and Login form
   const handleCreateAccountRedirect = (e) => {
     e.preventDefault();
-    setIsLoginForm(false); // Show Create Account form
+    setIsLoginForm(false);
   };
 
   return (
-    <section className="flex items-center justify-center p-4 bg-white min-h-screen font-[Inter] ml-[100px] mr-[12%]">
+    <section className="flex items-center justify-center p-4 bg-white min-h-screen font-[Inter] mx-4 sm:ml-[90px] sm:mr-[7%]">
       <form
-        className={`max-w-100 w-full bg-white rounded-xl shadow-lg p-6 sm:p-8 text-[#2c4f58] ${
-          isOtpForm ? "h-[400px]" : "h-[600px]"
-        } transition-all`}
+        className="max-w-100 w-full bg-white rounded-xl shadow-lg p-6 sm:p-8 text-[#2c4f58] h-auto transition-all"
         autoComplete="off"
       >
         {!isLoginForm && !isOtpForm ? (
@@ -52,7 +46,7 @@ const FormSection = () => {
 
             <PhoneInput />
 
-            <div className="flex gap-6 mb-6">
+            <div className="flex flex-col sm:flex-row gap-6 mb-6">
               <InputField
                 id="firstName"
                 label="First Name"
@@ -75,7 +69,10 @@ const FormSection = () => {
                 Create an account
               </span>
               , you agree to our{" "}
-              <a href="/terms" className="underline text-[#2c4f58] font-medium">
+              <a
+                href="/terms"
+                className="underline text-[#2c4f58] font-medium"
+              >
                 T & C
               </a>
               .
@@ -83,7 +80,7 @@ const FormSection = () => {
 
             <button
               type="submit"
-              onClick={handleCreateAccountClick} // This triggers the OTP form
+              onClick={handleCreateAccountClick}
               className="mt-5 w-full bg-[#225865] text-white font-semibold rounded-md text-base hover:bg-[#24434c] transition-colors h-[45px] flex items-center justify-center"
             >
               Create an account
@@ -107,7 +104,6 @@ const FormSection = () => {
         ) : isLoginForm ? (
           <LoginForm onCreateAccountRedirect={handleCreateAccountRedirect} />
         ) : (
-          // Render OTP Form when isOtpForm is true
           <OtpForm />
         )}
       </form>

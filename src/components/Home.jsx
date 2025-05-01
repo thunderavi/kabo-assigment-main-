@@ -1,22 +1,22 @@
 import React from 'react';
 import '../style/Home.css';
 import FormSection from './FormSection';
-import illustration from '../assets/image1.png'; // Vite: use import for images
+import illustration from '../assets/image1.png';
 
 const Home = () => {
   return (
     <main className="main-container">
       <section className="left-section">
-        <h1 className="main-heading ">
+        <h1 className="main-heading">
           Partner with real estate agents in
           <br />
           your city{' '}
-          <span className="highlighted-text ">
+          <span className="highlighted-text">
             and accelerate your <br />
             residential project sales
           </span>
         </h1>
-        <p className="description ">
+        <p className="description">
           A plug-and-play platform designed to help real estate developers
           discover channel partners, manage communication, track site visits,
           and automate commission calculation - all in one place

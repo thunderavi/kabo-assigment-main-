@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 
-body {
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
 .main-container {
@@ -9,18 +13,26 @@ body {
   flex-direction: column;
   gap: 2rem;
   padding: 1.5rem;
-  min-height: 80vh;
+  height: 100vh;
+  box-sizing: border-box;
   background: white;
   color: #4a4a4a;
-  justify-content: center;
+  justify-content: flex-start; /* Show content from the top on mobile */
   align-items: center;
-  margin-left: 100px;
+  overflow-y: auto;
+  margin-left: 16px; /* Add left margin for mobile */
+  margin-right: 4px; /* Further decrease the right margin for mobile */
 }
 
+/* Desktop layout adjustments */
 @media (min-width: 768px) {
   .main-container {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    margin-left: 50px; /* Add larger left margin for desktop */
+    margin-right: 8px; /* Further decrease the right margin for desktop */
   }
 }
 
@@ -59,6 +71,6 @@ body {
 .illustration {
   width: 100%;
   max-width: 450px;
-  height: 350px;
+  height: auto;
+  object-fit: contain;
 }
-
