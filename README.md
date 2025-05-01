@@ -5,7 +5,9 @@ Welcome to the **KABO** frontend project, built with **React** and powered by **
 ---
 
 Laptop Screen
-https://github.com/user-attachments/assets/7bad0f3c-b5d2-4ec7-9688-e2ea77405209
+![Laptop GIF](https://github.com/user-attachments/assets/d28a44c8-6479-4d38-af26-2df024ad1834)
+
+
 
 Mobile Screen
 https://github.com/user-attachments/assets/c9845751-be14-46cd-b4ed-e870f1037cb9
