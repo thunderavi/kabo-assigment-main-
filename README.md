@@ -5,12 +5,15 @@ Welcome to the **KABO** frontend project, built with **React** and powered by **
 ---
 
 Laptop Screen
+
 ![Laptop GIF](https://github.com/user-attachments/assets/d28a44c8-6479-4d38-af26-2df024ad1834)
 
 
 
 Mobile Screen
-https://github.com/user-attachments/assets/c9845751-be14-46cd-b4ed-e870f1037cb9
+
+![Mobile GIF](https://github.com/user-attachments/assets/43aea9c9-5199-470d-b45e-e97ce1bbb62b)
+
 
 
 
