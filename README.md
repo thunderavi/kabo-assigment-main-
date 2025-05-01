@@ -2,6 +2,7 @@
 
 Welcome to the **KABO** frontend project, built with **React** and powered by **Vite** for blazing-fast development. ✨
 
+Doployment link -- [https://kaboo-assigment.vercel.app/]
 ---
 
 ## 📦 Local Installation (Laptop)
