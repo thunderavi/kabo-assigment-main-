@@ -4,19 +4,6 @@ Welcome to the **KABO** frontend project, built with **React** and powered by **
 
 ---
 
-Laptop Screen
-
-![Laptop GIF](https://github.com/user-attachments/assets/d28a44c8-6479-4d38-af26-2df024ad1834)
-
-
-
-Mobile Screen
-
-![Mobile GIF](https://github.com/user-attachments/assets/43aea9c9-5199-470d-b45e-e97ce1bbb62b)
-
-
-
-
 ## 📦 Local Installation (Laptop)
 
 > Make sure you have [Node.js](https://nodejs.org/) and [Git](https://git-scm.com/) installed.
@@ -58,3 +45,18 @@ kabo/
 │   ├── index.js
 │   └── main.jsx
 ├──
+ ```
+
+Laptop Screen
+
+![Laptop GIF](https://github.com/user-attachments/assets/d28a44c8-6479-4d38-af26-2df024ad1834)
+
+
+
+Mobile Screen
+
+![Mobile GIF](https://github.com/user-attachments/assets/43aea9c9-5199-470d-b45e-e97ce1bbb62b)
+
+
+
+
