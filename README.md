@@ -16,7 +16,7 @@ Doployment link -- [https://kaboo-assigment.vercel.app/]
 
 git clone [https://github.com/thunderavi/kabo-assigment-main-.git]
 
-cd kabo
+cd kabo-assigment-main-
 
 # 2. Install dependencies
 npm install
