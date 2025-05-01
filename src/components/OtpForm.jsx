@@ -1,6 +1,6 @@
 import React from "react";
 
-const OtpForm = () => {
+const OtpForm = ({ onChangeEmail }) => {
   return (
     <div>
       <h2 className="text-[#1f4e5f] text-lg font-normal border-b border-gray-300 pb-3 mb-4">
@@ -42,12 +42,13 @@ const OtpForm = () => {
       <hr className="border-gray-300 mb-4" />
       <p className="text-center text-xs text-[#1f1f1f] tracking-normal">
         Wrong email id?{" "}
-        <a
-          href="/create-account"
+        <button
+          type="button"
+          onClick={onChangeEmail}
           className="text-[#1f4e5f] font-semibold hover:underline focus:underline"
         >
           Change email id
-        </a>
+        </button>
       </p>
     </div>
   );

@@ -3,7 +3,7 @@ import InputField from "./InputField";
 import PhoneInput from "./PhoneInput";
 import PasswordField from "./PasswordField";
 import OtpForm from "./OtpForm";
-import LoginForm from "./LoginForm"; // Import the LoginForm
+import LoginForm from "./LoginForm";
 
 const FormSection = () => {
   const [isOtpForm, setIsOtpForm] = useState(false);
@@ -22,6 +22,10 @@ const FormSection = () => {
   const handleCreateAccountRedirect = (e) => {
     e.preventDefault();
     setIsLoginForm(false);
+  };
+
+  const handleChangeEmail = () => {
+    setIsOtpForm(false); // Go back to account creation form
   };
 
   return (
@@ -69,10 +73,7 @@ const FormSection = () => {
                 Create an account
               </span>
               , you agree to our{" "}
-              <a
-                href="/terms"
-                className="underline text-[#2c4f58] font-medium"
-              >
+              <a href="/terms" className="underline text-[#2c4f58] font-medium">
                 T & C
               </a>
               .
@@ -104,7 +105,7 @@ const FormSection = () => {
         ) : isLoginForm ? (
           <LoginForm onCreateAccountRedirect={handleCreateAccountRedirect} />
         ) : (
-          <OtpForm />
+          <OtpForm onChangeEmail={handleChangeEmail} />
         )}
       </form>
     </section>
