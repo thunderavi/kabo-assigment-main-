@@ -18,7 +18,7 @@ https://github.com/user-attachments/assets/c9845751-be14-46cd-b4ed-e870f1037cb9
 
 ### 🖥️ Steps to run on your laptop:
 
-```bash
+```
 # 1. Clone the repository
 git clone [https://github.com/thunderavi/kabo-assigment-main-.git]
 cd kabo
@@ -26,9 +26,11 @@ cd kabo
 # 2. Install dependencies
 npm install
 
+
 # 3. Run the development server
 npm run dev
 
+```
 FILE STRUCTURE
 kabo/
 ├── node_modules/
