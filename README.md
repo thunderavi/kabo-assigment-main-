@@ -28,3 +28,26 @@ npm install
 
 # 3. Run the development server
 npm run dev
+
+FILE STRUCTURE
+kabo/
+├── node_modules/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── FormSection.jsx
+│   │   ├── Home.jsx
+│   │   ├── InputField.jsx
+│   │   ├── LoginForm.jsx
+│   │   ├── OtpForm.jsx
+│   │   ├── PasswordField.jsx
+│   │   └── PhoneInput.jsx
+│   ├── style/
+│   │   ├── Home.css
+│   │   ├── App.css
+│   │   └── index.css
+│   ├── App.jsx
+│   ├── index.js
+│   └── main.jsx
+├──
