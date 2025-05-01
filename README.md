@@ -12,7 +12,9 @@ Welcome to the **KABO** frontend project, built with **React** and powered by **
 
 ```
 # 1. Clone the repository
+
 git clone [https://github.com/thunderavi/kabo-assigment-main-.git]
+
 cd kabo
 
 # 2. Install dependencies
