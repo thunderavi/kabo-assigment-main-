@@ -4,6 +4,14 @@ Welcome to the **KABO** frontend project, built with **React** and powered by **
 
 ---
 
+Laptop Screen
+https://github.com/user-attachments/assets/7bad0f3c-b5d2-4ec7-9688-e2ea77405209
+
+Mobile Screen
+https://github.com/user-attachments/assets/c9845751-be14-46cd-b4ed-e870f1037cb9
+
+
+
 ## 📦 Local Installation (Laptop)
 
 > Make sure you have [Node.js](https://nodejs.org/) and [Git](https://git-scm.com/) installed.
@@ -12,7 +20,7 @@ Welcome to the **KABO** frontend project, built with **React** and powered by **
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/kabo.git
+git clone [https://github.com/thunderavi/kabo-assigment-main-.git]
 cd kabo
 
 # 2. Install dependencies
