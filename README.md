@@ -30,7 +30,7 @@ npm install
 # 3. Run the development server
 npm run dev
 
-```
+
 FILE STRUCTURE
 kabo/
 ├── node_modules/
